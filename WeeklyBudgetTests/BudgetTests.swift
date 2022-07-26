@@ -13,22 +13,14 @@ class BudgetTests: XCTestCase {
     
     func testBudgetContainsWeeklyRemaining() {
         
-//        let amounts: [Decimal] = [0,1,2,123]
-//        
-//        amounts.forEach { amount in
-//            let budget = Budget(total: amount)
-//            XCTAssertEqual(budget.weeklyRemaining, 0)
-//            
-//        }
+        let amounts: [Decimal] = [0,1,2,123]
+
+        amounts.forEach { amount in
+            let budget = Budget(total: amount)
+            XCTAssertEqual(budget.weeklyRemaining, amount)
+
+        }
         
-        var budget = Budget(total: 0)
-        XCTAssertEqual(budget.weeklyRemaining, 0)
-        
-        budget = Budget(total: 1)
-        XCTAssertEqual(budget.weeklyRemaining, 1)
-        
-        budget = Budget(total: 123)
-        XCTAssertEqual(budget.weeklyRemaining, 123)
 
     }
     
