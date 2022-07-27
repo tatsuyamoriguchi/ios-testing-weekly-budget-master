@@ -15,6 +15,7 @@
 		2221BD6724805BDF00D02CAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2221BD6524805BDF00D02CAF /* LaunchScreen.storyboard */; };
 		2221BD7D24805CB800D02CAF /* MoneyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221BD7C24805CB800D02CAF /* MoneyFormatterTests.swift */; };
 		2221BD7F24805DC500D02CAF /* MoneyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2221BD7E24805DC500D02CAF /* MoneyFormatter.swift */; };
+		8CDFB98F28918D480088E5A4 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDFB98E28918D480088E5A4 /* ViewControllerTests.swift */; };
 		8CF3834C28903FC700A0CD09 /* BudgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF3834B28903FC700A0CD09 /* BudgetTests.swift */; };
 		8CF38357289041FF00A0CD09 /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF38356289041FF00A0CD09 /* Budget.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		2221BD7624805C1700D02CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2221BD7C24805CB800D02CAF /* MoneyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyFormatterTests.swift; sourceTree = "<group>"; };
 		2221BD7E24805DC500D02CAF /* MoneyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyFormatter.swift; sourceTree = "<group>"; };
+		8CDFB98E28918D480088E5A4 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		8CF3834B28903FC700A0CD09 /* BudgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetTests.swift; sourceTree = "<group>"; };
 		8CF38356289041FF00A0CD09 /* Budget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +106,7 @@
 				2221BD7624805C1700D02CAF /* Info.plist */,
 				2221BD7C24805CB800D02CAF /* MoneyFormatterTests.swift */,
 				8CF3834B28903FC700A0CD09 /* BudgetTests.swift */,
+				8CDFB98E28918D480088E5A4 /* ViewControllerTests.swift */,
 			);
 			path = WeeklyBudgetTests;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CDFB98F28918D480088E5A4 /* ViewControllerTests.swift in Sources */,
 				8CF3834C28903FC700A0CD09 /* BudgetTests.swift in Sources */,
 				2221BD7D24805CB800D02CAF /* MoneyFormatterTests.swift in Sources */,
 			);

@@ -1,24 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeeklyBudget" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Remaining" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFu-AE-UKT">
+                                <rect key="frame" x="30" y="221" width="143" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Rt4-6h-Z0x"/>
+                                    <constraint firstAttribute="width" constant="143" id="Y7f-Rg-MXH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Remaining" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1X-CC-uij">
+                                <rect key="frame" x="30" y="270" width="140" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="6eq-gp-Et9"/>
+                                    <constraint firstAttribute="height" constant="32" id="lLt-HJ-C9s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Remaining" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWO-7i-zz7">
+                                <rect key="frame" x="239" y="270" width="97" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="LV6-vn-gOd"/>
+                                    <constraint firstAttribute="width" constant="97" id="oIr-lN-KMd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4k-Ny-DQc">
+                                <rect key="frame" x="34" y="163" width="140" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="L2X-d6-o3w"/>
+                                    <constraint firstAttribute="width" constant="140" id="vwh-lF-MR0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Budget" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgW-kB-RSF">
+                                <rect key="frame" x="36" y="112" width="137" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Dr9-eW-E4n"/>
+                                    <constraint firstAttribute="width" constant="137" id="WZD-x8-1Aw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZLv-uO-C8Y">
+                                <rect key="frame" x="239" y="163" width="97" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="qPj-rZ-aKd"/>
+                                    <constraint firstAttribute="width" constant="97" id="r6Z-1o-LcG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XYB-p4-MtO">
+                                <rect key="frame" x="239" y="110" width="97" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Hyd-2C-iTE"/>
+                                    <constraint firstAttribute="height" constant="34" id="bA7-3i-g1E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Remaining" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93M-Yb-a8J">
+                                <rect key="frame" x="239" y="221" width="97" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="SRc-s1-pKy"/>
+                                    <constraint firstAttribute="width" constant="97" id="XaI-TR-x5k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="a1X-CC-uij" firstAttribute="top" secondItem="nFu-AE-UKT" secondAttribute="bottom" constant="17" id="3jm-x6-w0Q"/>
+                            <constraint firstItem="i4k-Ny-DQc" firstAttribute="top" secondItem="zgW-kB-RSF" secondAttribute="bottom" constant="19" id="6mI-1b-yVT"/>
+                            <constraint firstItem="nFu-AE-UKT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="BOc-Ws-eXl"/>
+                            <constraint firstItem="ZLv-uO-C8Y" firstAttribute="top" secondItem="XYB-p4-MtO" secondAttribute="bottom" constant="19" id="LlY-Z0-A61"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZLv-uO-C8Y" secondAttribute="trailing" constant="78" id="SHC-ip-AGe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="93M-Yb-a8J" secondAttribute="trailing" constant="78" id="T2N-6Z-amj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vWO-7i-zz7" secondAttribute="trailing" constant="78" id="Vpj-9y-gC6"/>
+                            <constraint firstItem="XYB-p4-MtO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="WnE-LA-m0R"/>
+                            <constraint firstItem="93M-Yb-a8J" firstAttribute="top" secondItem="ZLv-uO-C8Y" secondAttribute="bottom" constant="24" id="ZMd-0W-Bap"/>
+                            <constraint firstItem="i4k-Ny-DQc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="ecu-h9-RhH"/>
+                            <constraint firstItem="zgW-kB-RSF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="fMP-ag-tTG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XYB-p4-MtO" secondAttribute="trailing" constant="78" id="oHn-ZP-q1g"/>
+                            <constraint firstItem="vWO-7i-zz7" firstAttribute="top" secondItem="93M-Yb-a8J" secondAttribute="bottom" constant="17" id="pEB-zr-MNU"/>
+                            <constraint firstItem="nFu-AE-UKT" firstAttribute="top" secondItem="i4k-Ny-DQc" secondAttribute="bottom" constant="26" id="pq8-8B-Wwz"/>
+                            <constraint firstItem="zgW-kB-RSF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="68" id="qxT-On-ipE"/>
+                            <constraint firstItem="a1X-CC-uij" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ufR-PM-ORz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="todayRemaininglabel" destination="93M-Yb-a8J" id="u9k-su-eJU"/>
+                        <outlet property="totalBudgetTextField" destination="XYB-p4-MtO" id="Fuz-fc-6qY"/>
+                        <outlet property="transactionTextField" destination="ZLv-uO-C8Y" id="ppq-FF-IXJ"/>
+                        <outlet property="weeklyRemaininglabel" destination="vWO-7i-zz7" id="uJa-jc-JxT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-168.11594202898553" y="64.955357142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
